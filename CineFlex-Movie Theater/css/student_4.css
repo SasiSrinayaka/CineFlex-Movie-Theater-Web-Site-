@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Bottom To Top Button  */
+.bottomToTop {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: black;
+    z-index: 10;
+}
+
+.upButton {
+    font-size: 50px;
+    color: #FFCC00;
+}
+
+.upButton:hover {
+    color: whitesmoke;
+}
+
+body {
+    background-color: #0E0D0D
+
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.nav_button {
+    background-color: transparent;
+    color: #FFCC00;
+    padding: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid #FFCC00;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+}
+
+.logo {
+    width: 270px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    z-index: 1;
+
+}
+
+.dropdown-menu a {
+    color: #B9B7B7;
+    display: block;
+    padding-top: 20px;
+}
+
+.dropdown-menu a:hover {
+    color: #FFCC00;
+}
+
+.button:hover .dropdown-menu {
+    display: block;
+}
+
+.button:hover .nav_button {
+    background-color: transparent;
+}
+.name h1 {
+    font-size: 30px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 5px solid var(--dark-brown) ; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0; /* Gives that scrolling effect as the typing happens */
+    width: fit-content;
+    animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+    
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+    }
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+from, to { border-color: transparent }
+50% { border-color: var(--dark-brown) }
+}
+.icon {
+    width: 40px;
+    float: right;
+    padding: 0px 10px;
+}
+
+.info {
+    margin-left: 10%;
+    margin-top: 15%;
+}  
+.info h2 {
+    margin-top: 20px;
+    font-size: 30px;
+    color: #B9B7B7;
+    margin-bottom: 20px;
+}
+
+.info h1 {
+    margin-top: 20px;
+    font-size: 50px;
+    color: #B9B7B7;
+    margin-bottom: 20px;
+}
+
+span {
+    color: transparent;
+    -webkit-text-stroke: 1px #FFCC00;
+}
+
+.info p {
+    color: #B9B7B7;
+    line-height: 22px;
+}
+
+.img {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    margin-right: 150px;
+}
+
+.shape {
+    padding: 200px;
+    width: 100%;
+    height: 65%;
+}
+
+.me {
+    width: 45%;
+    height: 70%;
+    position: absolute;
+    left: 80%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.heading2{
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    color: white;
+}
+.contact-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-icons{
+    margin-top: 10px;
+    font-size: 50px;
+}
+.contact-icons i{
+    top: 0;
+    color:white;
+
+}
+.contact-icons i:hover{
+    transition: 1000ms;
+    color:white !important;
+
+}
+
+.contact-icons *{
+    padding: 10px;
+}
+.contact-me .fa-facebook{
+    color: #3b5998 !important;
+}
+.contact-me .fa-instagram{
+    color:#B63092 !important;
+}
+.contact-me .fa-envelope{
+    color: crimson !important;
+}
+.contact-me .fa-linkedin{
+    color: #0072b1;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding-left: 50px;
+    margin-bottom: 20px;
+}
+
+.row a {
+
+    color: #B9B7B7;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid #B9B7B7;
+}
+
+.flexbox2 {
+    margin-top: 200px;
+    display: flex;
+    width: 100%;
+    height: 300px;
+    padding: 30px;
+
+}
+
+.flexbox2>div {
+    font-size: 16px;
+    text-align: center;
+    padding: 5px;
+    font-weight: 500;
+    color: #B9B7B7;
+    height: 265px;
+    width: 32%;
+    justify-content: center;
+}
+
+.flexbox2>div a {
+    color: #FFCC00;
+}
+
+.flexbox3 {
+    display: flex;
+    position: absolute;
+    background-color: #B9B7B7;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+
+}
+
+.education {
+    border-left: 3px solid #B9B7B7;
+    border-right: 3px solid #B9B7B7;
+}
+/* ------ Footer Section --------*/
+.footer {
+    margin-top: 100px;
+    width: 100%;
+    padding: 1 00px 100px;
+    background: #AD8943;
+}
+
+h3 {
+    text-align: center;
+}
+
+.col-1 p {
+    padding: 10px 70px;
+    font-size: medium;
+    align-items: center;
+    text-align: justify;
+    color: #0E0D0D;
+
+}
+
+
+
+.footer div {
+    text-align: left;
+    color: #0E0D0D;
+}
+
+.col-2 {
+    padding: 10px 320px;
+
+
+}
+
+.col-2 a {
+    padding: 10px;
+    color: #0E0D0D;
+    margin-bottom: 10px;
+    display: inline-block;
+
+
+}
+
+.col-3 {
+    padding: 10px 270px;
+}
+
+.col-3 a {
+    padding: 20px;
+    color: #0E0D0D;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.col-4 {
+    padding: 10px 570px;
+}
+
+.col-4 img {
+    width: 40px;
+    padding: 20px;
+}
+
+.col-1 a {
+    color: #FFCC00;
+    cursor: pointer;
+}
+
+.col-5 p {
+    text-align: center;
+    color: #0E0D0D;
+}
+
+.col-6 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    margin-bottom: 20px;
+}
+
+.col-6 a {
+    color: #0E0D0D;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #0E0D0D;
+    margin-left: 43%;
+
+}

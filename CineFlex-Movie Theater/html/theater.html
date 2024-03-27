@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../images/Logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/theater.css">
+    
+
+    <title>CINEFLEX | THEATER</title>
+  </head>
+
+  <body>
+
+  <!--------------------------------- Navigation Bar --------------------------------->
+    <nav>
+      <div class="button">
+        <button class="nav_button">Menu</button>
+        <div class="dropdown-menu">
+          <a href="HomePage.html">Home</a>
+          <a href="../html/theater.html">Theater</a>
+          <a href="Movies.html">Movies</a>
+          <a href="../html/tv-shows.html">TV-Shows</a>
+          <a href="Anime.html">Anime</a>
+          <a href="cartoon.html">Cartoon</a>
+          <a href="#">Shop</a>
+          <a href="form.html">Comments</a>
+          <a href="Quiz.html">Quiz</a>
+          <a href="../html/Sitemap.html">Site-Map</a>
+          <a href="About Us/Aboutus.html">About-Us</a>
+        </div>
+      </div>
+    
+    <div><img class="logo" src="../images/Logo.ico" alt="logo" style="text-align: center;"></div>
+    <div><a href="#"><img class="icon" src="../images/user.png" alt="user" style="float:right"> </a>
+    </div>
+    </nav>
+
+
+    
+
+  <!-------------------------------- BODY --------------------------------->
+    
+    <h1><span class="topic">CINEFLEX - Theater Review</span></h1>
+    <div class="full-img" id="fullImgBox">
+      <img src="/" id="fullImg" alt="fullimage">
+      <div id="imgDescription"></div>
+
+      <div class="font-size-buttons">
+        <button onclick="decreaseFontSize()">-</button>
+        <button onclick="increaseFontSize()">+</button>
+      </div>
+
+      <div class="color-buttons">
+        <button onclick="changeColorScheme('default')">Default</button>
+        <button onclick="changeColorScheme('red')">Red</button>
+        <button onclick="changeColorScheme('green')">Green</button>
+        <button onclick="changeColorScheme('random')">Random</button>
+      </div>      
+      <span onclick="closefullImg()">✕</span>
+    </div>
+
+    <!------------------------ THEATER BOX ----------------------------------->
+    <div class="row">
+      <div class="column">
+        <div
+          onclick="showFullImg('../Img/theater1.png', 'Movies are a powerful medium of storytelling, blending captivating visuals, compelling narratives, and emotive soundtracks to immerse audiences in diverse worlds. From thrilling adventures to heartwarming romances, thought-provoking dramas to side-splitting comedies, movies entertain, educate, and inspire. They transcend borders, cultures, and time, leaving lasting impressions on our lives. Whether on the big screen or streaming at home, movies continue to be an integral part of our collective human experience, sparking conversations and fostering a shared sense of connection.')">
+          <img src="../images/Movie.png" alt="Image Movie" class="img-style">
+          <div class="text-block">
+            <h4><a href="#">Movie</a></h4>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="column">
+        <div
+          onclick="showFullImg('../Img/theater4.jpeg', 'TV shows are serialized storytelling wonders that bring captivating narratives, intriguing characters, and diverse genres to our screens. From thrilling dramas to hilarious comedies, thought-provoking mysteries to heartwarming romances, they offer a unique blend of entertainment and emotional connection. With each episode, we become invested in the lives of these characters, forming lasting bonds and eagerly anticipating the next installment. TV shows have become an integral part of our cultural landscape, providing endless hours of enjoyment and shared experiences.')">
+          <img src="../images/Tv - Shows.png" alt="Image TV-Shows" class="img-style">
+          <div class="text-block">
+            <h4><a href="../html/tv-shows.html">TV-Shows</a></h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div
+          onclick="showFullImg('../Img/theater3.jpeg', 'Anime, a captivating form of Japanese animation, delights audiences with its rich storytelling, vibrant artistry, and diverse genres. From epic adventures and fantastical worlds to introspective dramas and heartwarming romances, anime offers a unique blend of cultural influences and imaginative storytelling. Its unique art style and diverse characters have garnered a global fanbase, forging connections and inspiring creativity. With a wide range of themes and emotions, anime continues to leave a lasting impact on viewers of all ages.')">
+          <img src="../images/Anime.png" alt="Image Anime" class="img-style">
+          <div class="text-block">
+            <h4><a href="#">Anime</a></h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div
+          onclick="showFullImg('../Img/theater2.png', 'Cartoons are animated wonders that spark joy with their colorful visuals, whimsical characters, and imaginative storytelling. From classic Saturday morning favorites to modern animated series, cartoons appeal to audiences of all ages. They offer a delightful escape into fantastical worlds, where creativity knows no bounds. With humor, adventure, and life lessons, cartoons entertain and inspire, leaving a lasting impression on our hearts and minds. Their timeless charm continues to enchant generations, creating cherished memories for both young and old.')">
+          <img src="../images/Cartoon.png" alt="Image Cartoon" class="img-style">
+          <div class="text-block">
+            <h4><a href="#">Cartoon</a></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <video class="video" autoplay loop muted src="../video/video1.mp4"></video>
+    <script src="../js/theater.js"></script>
+
+
+
+ <!-------------------------------- FOOTER SECTION ------------------------------------------------->
+ <div class="footer">
+  <div class="col-1">
+    <br>
+    <h3>About Us</h3>
+    <br>
+    <p> Welcome to CINEFLEX, your ultimate destination for discovering and enjoying the best trending movies,TV
+      shows, anime series,and more. We are dedicated to providing a comprehensive platform that caters to all
+      your entertainment needs.<a href="#">for more..</a></p>
+  </div>
+  <div class="col-2">
+    <h3>Explore</h3>
+    <br>
+    <a href="HomePage.html">Home</a>
+    <a href="Movies.html">Movies</a>
+    <a href="../html/tv-shows.html">TV-Shows</a>
+    <a href="Anime.html">Anime</a>
+    <a href="#"><br>Cartoons</a>
+    <a href="#">Shop</a>
+    <a href="form.html">Comments</a>
+    <a href="Quiz.html">Quiz</a>
+    <a href="../html/Sitemap.html">Site Map</a>
+    <a href="About Us/Aboutus.html">About Us</a>
+  </div>
+  <div class="col-3">
+    <h3>Online Shop</h3>
+    <br><br>
+    <a href="#">Home</a>
+    <a href="#">Movies</a>
+    <a href="../html/tv-shows.html">TV-Shows</a>
+    <a href="#">Anime</a>
+    <a href="#">Shop</a>
+    <a href="#">Comments</a>
+    <a href="#">Quiz</a>
+    <a href="../html/Sitemap.html">Site Map</a>
+    <a href="#">About Us</a>
+  </div>
+  <div class="col-4">
+    <h3>Follow Us<br></h3>
+    <a href="https://www.facebook.com/profile.php?id=100093968542581&_rdc=1&_rdr"><img src="../images/FB.png" alt="facebook"></a>
+    <a href="https://www.instagram.com/cineflexweb/"><img src="../images/Insta.png" alt="Instagram"></a>
+    <a href="#"><img src="../images/LinkedIn.png" alt="LinkedIn"></a>
+    <a href="#"><img src="../images/Twitter.png" alt="Twitter"></a>
+  </div>
+  <div class="col-6">
+    <a href="../html/student_4.html">Page Editor&nbsp; &#x21fe;</a>
+  </div>
+  <div class="col-5">
+    <h3>Contact Us</h3><br>
+    <p>+94775229603</p>
+    <p>Cineflexweb@gmail.com</p><br><br>
+  </div>
+</div>
+</body>
+</html>
